@@ -11,7 +11,6 @@ import java.util.stream.Collectors;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.lang.reflect.*;
 
 import static org.junit.Assert.assertTrue;
 
@@ -83,15 +82,7 @@ public class RouterGetTest {
             assertTrue(false);
         }
 
-        try {
-            Class<?> obj = RouterGetTest.server.getClass();
-            Field field1 = obj.getDeclaredField("internalServer");
-            field1.setAccessible(true);
-            var internalServer = (com.sun.net.httpserver.HttpServer) field1.get(RouterGetTest.server);
-            internalServer.stop(1);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        server.stop(0);
     }
 
     @Test
@@ -162,15 +153,7 @@ public class RouterGetTest {
             assertTrue(false);
         }
 
-        try {
-            Class<?> obj = RouterGetTest.server.getClass();
-            Field field1 = obj.getDeclaredField("internalServer");
-            field1.setAccessible(true);
-            var internalServer = (com.sun.net.httpserver.HttpServer) field1.get(RouterGetTest.server);
-            internalServer.stop(1);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        server.stop(0);
     }
 
     @Test
@@ -247,14 +230,6 @@ public class RouterGetTest {
             assertTrue(false);
         }
 
-        try {
-            Class<?> obj = RouterGetTest.server.getClass();
-            Field field1 = obj.getDeclaredField("internalServer");
-            field1.setAccessible(true);
-            var internalServer = (com.sun.net.httpserver.HttpServer) field1.get(RouterGetTest.server);
-            internalServer.stop(1);
-        } catch (Exception e) {
-            System.out.println(e);
-        }
+        server.stop(0);
     }
 }
