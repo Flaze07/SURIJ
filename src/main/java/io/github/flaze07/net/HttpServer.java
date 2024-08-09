@@ -120,4 +120,8 @@ public class HttpServer
 		}
 		internalServer.start();
 	}
+
+	public void stop(int delay) {
+		internalServer.stop(delay);
+	}
 }
