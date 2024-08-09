@@ -1,4 +1,4 @@
-package io.github.flaze07.util;
+package com.github.flaze07.util;
 
 import java.util.Collections;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
 package io.github.flaze07;
 
-import io.github.flaze07.net.*;
+import com.github.flaze07.net.*;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

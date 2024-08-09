@@ -1,4 +1,4 @@
-package io.github.flaze07.net;
+package com.github.flaze07.net;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
